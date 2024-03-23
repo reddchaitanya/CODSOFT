@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>	
+input{
+	width:65px;
+	height:50px;
+	font-size:20px;
+	margin:5px;
+}
+.t1{
+    width:97%;
+    text-align:right;
+}	
+table{
+    border:2px solid #888888;
+}
+</style>
+<title>Javascript Calculator</title>
+</head>
+<body>
+<p align="center"><font size="8">Basic Calculator</font></p>
+<br>
+<form>
+<table align="center">
+<tr>
+<td>
+<input type="text" name="Input" class="t1">
+</td>
+</tr>
+<tr>
+<td>
+<input type="button" value="1" OnClick="Input.value += '1'">
+<input type="button" value="2" OnCLick="Input.value += '2'">
+<input type="button" value="3" OnCLick="Input.value += '3'">
+<input type="button" value="+" OnCLick="Input.value += '+'">
+<input type="button" value="Del" OnClick="Input.value = Input.value.slice(0,Input.value.length-1)">
+<br>
+<input type="button" value="4" OnClick="Input.value += '4'">
+<input type="button" value="5" OnCLick="Input.value += '5'">
+<input type="button" value="6" OnClick="Input.value += '6'">
+<input type="button" value="-" OnClick="Input.value += '-'">
+<input type="button" value="x^2" OnClick="Input.value **= 2">
+<br>
+<input type="button" value="7" OnClick="Input.value += '7'">
+<input type="button" value="8" OnCLick="Input.value += '8'">
+<input type="button" value="9" OnClick="Input.value += '9'">
+<input type="button" value="x" OnClick="Input.value += '*'">
+<input type="button" value="x^3" OnClick="Input.value **= 3">
+<br>
+<input type="button" value="Clear" OnClick="Input.value = ''">
+<input type="button" value="0" OnClick="Input.value += '0'">
+<input type="button" value="=" OnClick="Input.value = eval(Input.value)">
+<input type="button" value="/" OnClick="Input.value += '/'">
+<input type="button" value="Sqrt" OnClick="Input.value = Math.sqrt(Input.value)">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
